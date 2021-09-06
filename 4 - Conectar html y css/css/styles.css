@@ -1,0 +1,77 @@
+/* * {
+    background-color: lightcoral;
+}
+
+h1 {
+    background-color: lightcyan;
+}
+
+p {
+    background-color: lightgreen;
+}
+
+ul {
+    background-color: red;
+}
+
+li {
+    background-color: blue;
+} */
+
+
+/* #title {
+    background-color: chartreuse;
+} */
+
+
+/* .title {
+    background-color: lightsalmon;
+} */
+
+
+/* Selectores de atributos */
+
+
+/* [href] {
+    background-color: mediumaquamarine;
+}
+
+[href="https://google.com"] {
+    background-color: orange;
+}
+
+[href^="color"] {
+    background-color: red;
+}
+
+[href*="color"] {
+    background-color: green;
+}
+
+[href$="azul"] {
+    background-color: blue;
+}
+
+[lang|="en"] {
+    background-color: magenta;
+} */
+
+
+/* Selector decendente */
+
+
+/* 
+div .title-2 {
+    background-color: lightseagreen;
+} */
+
+
+/* Selector de hermanos */
+
+.text-2+.title-2 {
+    background-color: tomato;
+}
+
+.text-2~p {
+    background-color: teal;
+}

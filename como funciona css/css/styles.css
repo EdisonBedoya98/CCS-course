@@ -1,0 +1,38 @@
+/* Herencia */
+
+body {
+    background-color: lawngreen;
+}
+
+h1 {
+    color: cyan;
+    font-size: 10px;
+}
+
+.text {
+    color: green;
+}
+
+
+/* Se fuerza la herencia con inherit vale para cualquier 
+propiedad
+*/
+
+.link {
+    color: inherit;
+}
+
+.list {
+    color: indianred;
+}
+
+
+/* Evita la herencia para las etiquetas que necesitamos */
+
+.list-item-extra {
+    color: initial;
+}
+
+.title {
+    color: red;
+}

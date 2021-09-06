@@ -1,0 +1,67 @@
+* {
+    /* Para que la caja distribuya sus tamaños de pagging border 
+    segun su widht y height */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+.header {
+    background-color: red;
+    /* height: 50px; */
+}
+
+.title {
+    /* margin-left: auto; */
+    width: 300px;
+    /* background-color: lightcoral; */
+    /* para centrar la caja */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.block {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    /* margin-top: 100px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 5px solid red;
+    /* padding: 50px 20px 30px 70px; */
+}
+
+
+/* A los elementos inline no se les puede dar medidas widht height pero si padding
+solo se le pueden dar medidas a los bloques */
+
+.inline {
+    background-color: lightcoral;
+    color: inherit;
+    /* padding: 100px 50px 30px 10px; */
+    /* margin-left: 100px; */
+}
+
+.buttons {
+    background-color: steelblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+.button {
+    margin-left: 130px;
+    padding: 55px 30px;
+    border: 20px solid red;
+    border-width: 20px;
+    border-style: solid;
+    border-color: red;
+    border-right-color: red;
+    border-right-width: 20px;
+    border-style: outset;
+}
