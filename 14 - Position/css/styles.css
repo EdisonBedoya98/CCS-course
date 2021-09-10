@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    /* background-color: lightskyblue; */
+    position: absolute;
+    /* margin-left: 100px; */
+}
+
+.box-1 {
+    background-color: lightcoral;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    /* top: 100px; */
+    /* bottom: 0;
+    right: 0; */
+}
+
+.box-2 {
+    background-color: lightgreen;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+/* Con position absolute se le pueden dar medidas a los
+ elementos de linea sin necesidad de usar display  
+ top, right, bottom y left se pueden usaron con position 
+ absolute para posicionar los elementos
+ Position absolute se posiciona de acuerdo a su contenedor
+ */
+
+.link {
+    /* display: inline-block; */
+    position: absolute;
+    background-color: lime;
+    width: 200px;
+    /* height: 100px; */
+    /* top: 50px; */
+}
+
+
+/* .box-1 {
+    background-color: lightcoral; */
+
+
+/* position: relative;
+    left: 100px;
+    top: 100px */
+
+
+/* position: relative; */
+
+
+/* left: 50px; */
+
+
+/* right: -50px; */
+
+
+/* bottom: -20px; */
+
+
+/* border-radius: 50px;
+    top: 100px;
+    left: 100px;
+} */
+
+
+/* .box-2 {
+    background-color: lightgreen;
+    position: relative; */
+
+
+/* } */

@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #555;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: #333;
+}
+
+
+/* Para poner el hijo box-1 detras del padre en este caso .container
+sedebe por el z-index negativo, ya que el padre asignandole 
+cualquier valor de z-index nunca se va a poner detras del hijo
+entonces el hijo tiene que ponerse detras del padre
+*/
+
+.box-1 {
+    background-color: lightcoral;
+    position: relative;
+    left: 150px;
+    z-index: -1;
+}
+
+
+/* Si el z-index se pone con los mismos valores
+segun en la posición del html el box se va a poner delante o detras
+del otro box, entre mas grande el z-index se va a poner delante
+*/
+
+.box-1-2 {
+    background-color: aquamarine;
+    position: relative;
+    left: 150px;
+    z-index: -2;
+    top: -25px;
+}
+
+.box-2 {
+    background-color: lightgreen;
+    position: relative;
+    top: 50px;
+    z-index: 20;
+}
+
+.box-3 {
+    background-color: lightseagreen;
+    position: relative;
+    z-index: 10;
+}

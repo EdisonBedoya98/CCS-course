@@ -81,3 +81,15 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+.container {
+    text-align: center;
+}
+
+.block1,
+.block2 {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}

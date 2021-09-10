@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    padding-top: 70px;
+}
+
+.header {
+    text-align: center;
+    /* padding: 25px 0; */
+    background-color: lightskyblue;
+    color: orangered;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+    /* position: sticky;
+    top: 0; */
+    height: 400px;
+    /* No declarar la propieda overflow con un valor diferente al valor
+por defecto que es visible porque va a dejar de funcionar la 
+propiedad position sticky */
+    overflow: visible;
+}
+
+article {
+    outline: 3px solid red;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+}
+
+
+/* Mientras el heigth del contenedor siga teniendo contenido se va 
+a posicionar en donde le indiquemos con top */
+
+.article-title {
+    position: sticky;
+    top: 0px;
+    background-color: #333;
+    margin: 0;
+}
+
+
+/* .menu {
+    position: sticky;
+    top: 0;
+} */
+
+.link {
+    /* position: fixed; */
+    background-color: lightcoral;
+    width: 200px;
+}
