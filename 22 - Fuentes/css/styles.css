@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Mano alzada';
+    src: local("Great Vibes"), url('../assets/fonts/GreatVibes-Regular.ttf');
+}
+
+body {
+    background-color: #333;
+    color: aliceblue;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: sans-serif;
+    font-weight: 700;
+    /* font-family: "Mano alzada"; */
+}
+
+.icon {
+    font-size: 2rem;
+    color: red;
+}
+
+.text {
+    text-transform: uppercase;
+    /* letter-spacing: 2px;
+    word-spacing: 5px; */
+    /* line-height: 3; */
+    /*text-shadow: 1px 0 red, 2px 0 blue; */
+    /* box-shadow: 30px 20px 5px; */
+    /* writing-mode: vertical-lr; */
+    word-break: break-all;
+    width: 10px;
+    /* text-align: center; */
+}
+
+.link {
+    color: white;
+    /* padding-bottom: 10px; */
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+}
+
+.word-container {
+    background-color: lightcoral;
+    height: 200px;
+    text-align: center;
+}
+
+.word {
+    line-height: 200px;
+}

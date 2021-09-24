@@ -1,15 +1,279 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        div.header {
+            display: relative;
+            text-align: center;
+            position: running(header);
+        }
+        
+        div.footer {
+            display: block;
+            text-align: center;
+            font-size: 60%;
+            font-face: arial, helvetica, sans-serif;
+            position: running(footer);
+        }
+        
+        div.content {
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        #pagenumber:before {
+            content: counter(page);
+        }
+        
+        #pagecount:before {
+            content: counter(pages);
+        }
+        
+        @page {
+            size: 8.5in 11in;
+            margin-top: 4cm;
+            margin-right: 2cm;
+            margin-bottom: 3cm;
+            margin-left: 2cm
+        }
+        
+        @page {
+            @top-center {
+                content: element(header)
+            }
+        }
+        
+        @page {
+            @bottom-center {
+                content: element(footer)
+            }
+        }
+        
+        @page {
+            @bottom-right {
+                content: 'PÃ¡gina ' counter(page) ' de ' counter(pages);
+                font-size: 60%;
+            }
+        }
+        
+        .break {
+            page-break-before: always;
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-image: url(/appl/IBM/WebSphere/AppServer/profiles/preprod02/installedApps/ashttptwoCellTST01/udea-tramites.ear/udea_tramites-0.0.15.war/img/marcaAguaEscudoUdeANoValido.png);">
+    <div class='header'>
+        <br/>
+        <div style='text-align: center; '>
+            <img src='/appl/IBM/WebSphere/AppServer/profiles/preprod02/installedApps/ashttptwoCellTST01/udea-tramites.ear/udea_tramites-0.0.15.war/img/Escudo.jpg' />
+        </div>
+    </div>
+    <div class='footer'></div>
+    <div class='content'>
+        <div style="text-align: center;">
+            <span style="font-size: xx-large;">UNIVERSIDAD DE ANTIOQUIA</span></div>
+        <div style="text-align: center;"><span style="font-size: x-large;">DIVISIÃ“N DE TALENTO HUMANO</span></div>
+        <div style="text-align: center;">&#160;</div>
+        <div style="text-align: center;"><br />
+            <span style="font-size: large;"><b>CERTIFICADO OFICIAL</b></span></div>
+        <div style="text-align: center;">&#160;</div>
+        <div style="text-align: center;">&#160;</div>
+        <div style="text-align: left;"><span style="font-size: large;">Medellin,  13 de septiembre de 2021 </span></div>
+        <div style="text-align: left;">&#160;</div>
+        <div style="text-align: left;"><span style="font-size: medium;"> </span></div>
+        <div style="text-align: center;">
+            <div style="text-align: center;"><span style="font-size: large;"><b>EL GESTOR ADMINISTRATIVO DE</b></span></div>
+            <div style="text-align: center;"><span style="font-size: large;"><b>GESTIÃ“N DE LA INFORMACIÃ“N LABORAL</b></span></div>
+        </div>
+        <p style="text-align: center;"><span style="font-size: large;"> </span> <span style="font-size: large;"> </span><span style="font-size: large;"> <b>CERTIFICA:</b></span></p>
+        <p style="text-align: justify;"><span style="font-size: large;">Que MARIA VICTORIA JARAMILLO VELEZ, con cÃ©dula        39.440.438, </span><span style="font-size: large;"><span style="font-size: large">prestÃ³</span> sus servicios a esta Universidad desde el 23 de enero de 2013
+            al 20 de agosto de 2019, como </span><span style="font-size: large;">Personal Administrativo.<br />
+    </span></p>
+        <p style="text-align: left;"><span style="font-size: large;">Se informa ademÃ¡s que ha prestado sus servicios de la siguiente manera:<br />
+    </span>&#160;<br/>
+            <div style="text-align: justify;">Como TÃ‰CNICO 1 PROCESO MISIONAL (ADMINISTRADOR SALAS DE COMPUTO) tiempo completo adscrito(a) DirecciÃ³n de PlaneaciÃ³n y Desarrollo Institucional, durante los siguientes periodos laborados:</div>
+            <div style="text-align:left">Del 23 de enero de 2013 al 20 de agosto de 2019.</div><br/>
+            <div style="text-align: justify;">Como TÃ‰CNICO 3 TEMPORAL tiempo completo adscrito(a) DirecciÃ³n de Desarrollo Institucional, durante los siguientes periodos laborados:</div>
+            <div style="text-align:left">Del 11 de enero de 2012 al 16 de diciembre de 2012.</div><br/>
+            <div style="text-align: justify;">Como TÃ‰CNICO 3 TEMPORAL tiempo completo adscrito(a) Oficina de PlaneaciÃ³n, durante los siguientes periodos laborados:</div>
+            <div style="text-align:left">Del 13 de enero de 2011 al 18 de diciembre de 2011.</div>
+            <div style="text-align:left">Del 2 de julio de 2010 al 19 de diciembre de 2010.</div>
+            <div style="text-align:left">Del 2 de junio de 2009 al 28 de junio de 2010.</div>
+        </p>
+        <p><span style="font-size: large;"><br />
+    </span><span style="font-size: large;">El presente certificado se expide para </span><span style="font-size: large;">t</span><span style="font-size: large;">rÃ¡mites personales</span>.
+            <table width="324" cellspacing="1" cellpadding="1" border="0" height="43">
+                <tbody>
+                    <tr>
+                        <td>&#160;</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <div style="text-align: left">
+            <div><span style="font-size: xx-small;">Autorizado para firmar certificaciones laborales mediante ResoluciÃ³n Rectoral 34283 de 2012</span></div>
+        </div>
+        <p><span style="font-size: xx-small;">Codigo certificado: <br/>Direccion de validacion:http://www2.udea.edu.co/tramites/validar</span></p>
+        <div><span style="font-size: xx-small;">Vigilada MineducaciÃ³n</span></div>
+    </div>
+</body>
 
+</html>
+[9/13/21 15:42:39:466 COT] 000001f1 SystemOut O Respuesta: {"attributes":[{"attributeName":"tipoIdentificacion","attributeType":"java.lang.String"},{"attributeName":"identificacion","attributeType":"java.lang.String"},{"attributeName":"nombrePila","attributeType":"java.lang.String"},{"attributeName":"apellido1","attributeType":"java.lang.String"},{"attributeName":"apellido2","attributeType":"java.lang.String"},{"attributeName":"correoElectronico","attributeType":"java.lang.String"},{"attributeName":"direccion","attributeType":"java.lang.String"},{"attributeName":"telefono","attributeType":"java.lang.String"},{"attributeName":"identificacionLdap","attributeType":"java.lang.String"},{"attributeName":"fax","attributeType":"java.lang.String"},{"attributeName":"continente","attributeType":"java.lang.Integer"},{"attributeName":"pais","attributeType":"java.lang.Integer"},{"attributeName":"departamento","attributeType":"java.lang.Integer"},{"attributeName":"municipio","attributeType":"java.lang.Integer"},{"attributeName":"temporal","attributeType":"java.lang.Integer"},{"attributeName":"emailPorRol","attributeType":"java.lang.String"},{"attributeName":"celular","attributeType":"java.lang.String"},{"attributeName":"TIPO_IDENTIFICACION","attributeType":"java.lang.String"},{"attributeName":"IDENTIFICACION","attributeType":"java.lang.String"},{"attributeName":"NOMBRE_PILA","attributeType":"java.lang.String"},{"attributeName":"APELLIDO1","attributeType":"java.lang.String"},{"attributeName":"APELLIDO2","attributeType":"java.lang.String"},{"attributeName":"CORREO_ELECTRONICO","attributeType":"java.lang.String"},{"attributeName":"DIRECCION","attributeType":"java.lang.String"},{"attributeName":"TELEFONO","attributeType":"java.lang.String"},{"attributeName":"IDENTIFICACION_LDAP","attributeType":"java.lang.String"},{"attributeName":"FAX","attributeType":"java.lang.String"},{"attributeName":"CONTINENTE","attributeType":"java.lang.String"},{"attributeName":"PAIS","attributeType":"java.lang.String"},{"attributeName":"DEPARTAMENTO","attributeType":"java.lang.String"},{"attributeName":"MUNICIPIO","attributeType":"java.lang.String"},{"attributeName":"CELULAR","attributeType":"java.lang.String"},{"attributeName":"EMAIL_POR_ROL","attributeType":"java.lang.String"},{"attributeName":"TEMPORAL","attributeType":"java.lang.String"}],"object":[{"apellido1":"JARAMILLO","apellido2":"VELEZ","celular":"3128018960","continente":1,"correoElectronico":"mvictoria.jaramillo@udea.edu.co","departamento":5,"direccion":"Cr
+54 A # 25 - 06 Urbanizacion Santa Fe!","emailPorRol":"","fax":"","identificacion":"39440438","identificacionLdap":"mvictoria.jaramillo","municipio":615,"nombrePila":"MARIA VICTORIA","pais":46,"telefono":"6148231","temporal":0,"tipoIdentificacion":"CC"}]}
+[9/13/21 15:43:16:080 COT] 000001f1 SystemOut O Este es el encabezado: <br/>
+<div style='text-align: center; '><img src='/appl/IBM/WebSphere/AppServer/profiles/preprod02/installedApps/ashttptwoCellTST01/udea-tramites.ear/udea_tramites-0.0.15.war/img/Escudo.jpg' /></div>
+[9/13/21 15:43:16:080 COT] 000001f1 SystemOut O Marca de agua: style="background-image: url(/appl/IBM/WebSphere/AppServer/profiles/preprod02/installedApps/ashttptwoCellTST01/udea-tramites.ear/udea_tramites-0.0.15.war/img/marcaAguaEscudoUdeA.png);" [9/13/21
+15:43:16:080 COT] 000001f1 SystemOut O Este es el contenido del pdf [9/13/21 15:43:16:080 COT] 000001f1 SystemOut O
+
+
+<html>
+
+<head>
+    <style>
+        div.header {
+            display: relative;
+            text-align: center;
+            position: running(header);
+        }
+        
+        div.footer {
+            display: block;
+            text-align: center;
+            font-size: 60%;
+            font-face: arial, helvetica, sans-serif;
+            position: running(footer);
+        }
+        
+        div.content {
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        #pagenumber:before {
+            content: counter(page);
+        }
+        
+        #pagecount:before {
+            content: counter(pages);
+        }
+        
+        @page {
+            size: 8.5in 11in;
+            margin-top: 4cm;
+            margin-right: 2cm;
+            margin-bottom: 3cm;
+            margin-left: 2cm
+        }
+        
+        @page {
+            @top-center {
+                content: element(header)
+            }
+        }
+        
+        @page {
+            @bottom-center {
+                content: element(footer)
+            }
+        }
+        
+        @page {
+            @bottom-right {
+                content: 'PÃ¡gina ' counter(page) ' de ' counter(pages);
+                font-size: 60%;
+            }
+        }
+        
+        .break {
+            page-break-before: always;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(/appl/IBM/WebSphere/AppServer/profiles/preprod02/installedApps/ashttptwoCellTST01/udea-tramites.ear/udea_tramites-0.0.15.war/img/marcaAguaEscudoUdeA.png);">
+    <div class='header'>
+        <br/>
+        <div style='text-align: center; '>
+            <img src='/appl/IBM/WebSphere/AppServer/profiles/preprod02/installedApps/ashttptwoCellTST01/udea-tramites.ear/udea_tramites-0.0.15.war/img/Escudo.jpg' />
+        </div>
+    </div>
+    <div class='footer'>
+        <table width="100%" border="0" height="400">
+            <tr>
+                <td><b>Ciudad Universitaria:</b> Calle 67 No. 53-108, bloque 16, oficina 108 </td>
+            </tr>
+            <tr>
+                <td><b>RecepciÃ³n de correspondencia:</b> Calle 70 No. 52-21. TelÃ©fonos: 2195286, 2195292, 2195295</td>
+            </tr>
+            <tr>
+                <td>Fax: 2195290. Correo electrÃ³nico: informacionlaboral@udea.edu.co. http://www.udea.edu.co</td>
+            </tr>
+            <tr>
+                <td>Nit: 890.980.040-8. Apartado 1226. MedellÃ­n, Colombia</td>
+            </tr>
+        </table>
+    </div>
+    <div class='content'>
+        <div style="text-align: center;">
+            <span style="font-size: xx-large;">UNIVERSIDAD DE ANTIOQUIA</span></div>
+        <div style="text-align: center;"><span style="font-size: x-large;">DIVISIÃ“N DE TALENTO HUMANO</span></div>
+        <div style="text-align: center;">&#160;</div>
+        <div style="text-align: center;"><br />
+            <span style="font-size: large;"><b>CERTIFICADO OFICIAL</b></span></div>
+        <div style="text-align: center;">&#160;</div>
+        <div style="text-align: center;">&#160;</div>
+        <div style="text-align: left;"><span style="font-size: large;">Medellin,  13 de septiembre de 2021 </span></div>
+        <div style="text-align: left;">&#160;</div>
+        <div style="text-align: left;"><span style="font-size: medium;"> </span></div>
+        <div style="text-align: center;">
+            <div style="text-align: center;"><span style="font-size: large;"><b>EL GESTOR ADMINISTRATIVO DE</b></span></div>
+            <div style="text-align: center;"><span style="font-size: large;"><b>GESTIÃ“N DE LA INFORMACIÃ“N LABORAL</b></span></div>
+        </div>
+        <p style="text-align: center;"><span style="font-size: large;"> </span> <span style="font-size: large;"> </span><span style="font-size: large;"> <b>CERTIFICA:</b></span></p>
+        <p style="text-align: justify;"><span style="font-size: large;">Que MARIA VICTORIA JARAMILLO VELEZ, con cÃ©dula        39.440.438, </span><span style="font-size: large;"><span style="font-size: large">prestÃ³</span> sus servicios a esta Universidad desde el 23 de enero de 2013
+            al 20 de agosto de 2019, como </span><span style="font-size: large;">Personal Administrativo.<br />
+    </span></p>
+        <p style="text-align: left;"><span style="font-size: large;">Se informa ademÃ¡s que ha prestado sus servicios de la siguiente manera:<br />
+    </span>&#160;<br/>
+            <div style="text-align: justify;">Como TÃ‰CNICO 1 PROCESO MISIONAL (ADMINISTRADOR SALAS DE COMPUTO) tiempo completo adscrito(a) DirecciÃ³n de PlaneaciÃ³n y Desarrollo Institucional, durante los siguientes periodos laborados:</div>
+            <div style="text-align:left">Del 23 de enero de 2013 al 20 de agosto de 2019.</div><br/>
+            <div style="text-align: justify;">Como TÃ‰CNICO 3 TEMPORAL tiempo completo adscrito(a) DirecciÃ³n de Desarrollo Institucional, durante los siguientes periodos laborados:</div>
+            <div style="text-align:left">Del 11 de enero de 2012 al 16 de diciembre de 2012.</div><br/>
+            <div style="text-align: justify;">Como TÃ‰CNICO 3 TEMPORAL tiempo completo adscrito(a) Oficina de PlaneaciÃ³n, durante los siguientes periodos laborados:</div>
+            <div style="text-align:left">Del 13 de enero de 2011 al 18 de diciembre de 2011.</div>
+            <div style="text-align:left">Del 2 de julio de 2010 al 19 de diciembre de 2010.</div>
+            <div style="text-align:left">Del 2 de junio de 2009 al 28 de junio de 2010.</div>
+        </p>
+        <p><span style="font-size: large;"><br />
+    </span><span style="font-size: large;">El presente certificado se expide para </span><span style="font-size: large;">t</span><span style="font-size: large;">rÃ¡mites personales</span>.
+            <table width="324" cellspacing="1" cellpadding="1" border="0" height="43">
+                <tbody>
+                    <tr>
+                        <td>&#160;<img src='http://test.udea.edu.co:29000/tramites/archivosTmp/443850HISLABSINSUELDO_16315657960771.jpg' width='250' height='50' /></td>
+                    </tr>
+                    <tr>
+                        <td>OSCAR GONZALO MONTOYA CASTRO</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <div style="text-align: left">
+            <div><span style="font-size: xx-small;">Autorizado para firmar certificaciones laborales mediante ResoluciÃ³n Rectoral 34283 de 2012</span></div>
+        </div>
+        <p><span style="font-size: xx-small;">Codigo certificado: 443850-WNS2JPNQ08<br/>Direccion de validacion:http://www2.udea.edu.co/tramites/validar</span></p>
+        <div><span style="font-size: xx-small;">Vigilada MineducaciÃ³n</span></div>
+    </div>
 </body>
 
 </html>

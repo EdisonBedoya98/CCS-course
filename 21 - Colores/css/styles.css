@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    color: #333;
+    background-color: hsla(60 100% 50% / 0.5);
+}
+
+.main {
+    /* color: aquamarine;
+    background-color: currentColor; */
+}
+
+.box {
+    /* border-top: 200px solid red;
+    border-left: 275px solid green;
+    border-right: 270px solid yellow; */
+    height: 300px;
+    width: 300px;
+    background-color: lightcoral;
+    /* background-color: rgba(0, 0, 0, 5); */
+    /* background-color: rgb(0 0 0 / 0.3); */
+    /* border: 5px solid currentColor; */
+    /* color: lime; */
+    /* box-shadow: 5px 5px 10px rgb(0 0 0 / 0.5); */
+    box-shadow: 5px 5px 10px #0004;
+    box-shadow: 5px 5px 10px hsl(180 50% 50% / 0.3);
+}
